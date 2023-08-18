@@ -1,0 +1,39 @@
+
+.board-row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.board-whole{
+    height: 100px;
+    width: 500px;
+    margin: 50px;
+}
+.square{
+    /* border: 2px solid black; */
+    border: 2px solid #ccc;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.square:hover {
+    background-color: #cac6c6;
+}
+
+.heading{
+    text-align: center;
+}
+
+canvas {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+  }
