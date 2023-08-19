@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Square from "./Square";
-import Confetti from "./Confetti";
 const Board = ()=>{
 
 
@@ -59,13 +58,21 @@ const Board = ()=>{
            <>
                     {iswinner === "draw" ? (
                         <>
-                            <p>It's a draw!</p>
+                            <div className="winnerText">
+                                It's a draw!
+                            </div>
+                            <div className="playagain">
                             <button onClick={resetboard}>Play again</button>
+                            </div>
                         </>
                     ):(
                         <>
-                            <p>{iswinner} won!</p>
+                            <div className="winnerText">
+                            {iswinner} won!
+                            </div>
+                            <div className="playagain">
                             <button onClick={resetboard}>Play again</button>
+                            </div>
                         </>
                     )}
             </>

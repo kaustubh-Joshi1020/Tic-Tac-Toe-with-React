@@ -1,4 +1,10 @@
 
+body{
+    background-color: rgb(130, 226, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .board-row{
     display: flex;
     justify-content: space-evenly;
@@ -8,11 +14,12 @@
 .board-whole{
     height: 100px;
     width: 500px;
-    margin: 50px;
+    margin-top: 150px;
+    
 }
 .square{
     /* border: 2px solid black; */
-    border: 2px solid #ccc;
+    border: 2px solid rgb(221, 104, 211);
     width: 200px;
     height: 100px;
     display: flex;
@@ -20,6 +27,7 @@
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s;
+    background-color: aliceblue;
 }
 
 
@@ -31,9 +39,37 @@
     text-align: center;
 }
 
-canvas {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    width: 100%;
-    margin: 0;
+.winnerText{
+    text-align: center;
+    position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}    
+
+.playagain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.playagain button{
+
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 14px 24px;
+    border: 1px solid rgb(240, 48, 30);
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: linear-gradient(to right, rgb(84, 235, 14) 0%, rgb(87, 177, 89) 50%, rgb(160, 224, 163) 100%);
+    color: #0d0c0c;
+
   }
+
+  .playagain button:hover{
+    opacity: 0.5;    
+}
